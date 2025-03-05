@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My dog</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;700&display=swap" rel="stylesheet">
+  
+  <style>
+    body {
+      background-color: rgb(255, 242, 185); 
+      font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+      text-align: center; 
+    }
+
+    .resized-image {
+      width: 100px; 
+      height: auto;
+    }
+
+    h1 {
+      font-size: 40px;
+      font-weight: medium; 
+      color: rgb(255, 175, 201)
+    }
+    h2{
+        font-size: 30px;
+        font-weight: medium; 
+        color: rgb(91, 158, 47)
+    }
+
+    p {
+      font-size: 18px; 
+    }
+
+    .image-container {
+      display: flex;
+      justify-content: center; 
+      gap: 20px; /*space between images*/
+      flex-wrap: nowrap; /*no wrapping to next line*/
+    }
+
+    figure {
+      text-align: center;
+      margin: 0; /* Remove default margin */
+    }
+
+    figure img {
+      max-width: 100%; /*scale images with container*/
+      height: 300px; /* Fixed height */
+    }
+
+    figcaption {
+      font-size: 14px;
+      color: #000946;
+      margin-top: 5px; /* Space between image and caption */
+    }
+
+
+  </style>
+</head>
+<body>
+
+<h1>About <i>호두 (Hodoo)</i></h1> <!-- Font style applied to the heading -->
+<p>This is Hodoo, you can email me here: <a href="mailto:chloecho.haeun@gmail.com">📧</a></p>
+
+<p>Here is a picture of Hodoo:</p>
+<img src="https://www.dropbox.com/scl/fi/oq9v5grhwzpjeyiudbeo6/lp_image.jpeg?rlkey=1vllhp9w3wj7symtkvtdxygqq&st=ohaxl3yt&raw=1" 
+     alt="Lost Pet" 
+     width="auto" 
+     height="300">
+
+<br>
+
+<p>He's a Maltese and born in S.Korea 🇰🇷 <br> His name means walnut in English </p>
+<h2>silly pic of him:</h2>
+<img src="https://www.dropbox.com/scl/fi/4il1ieejjy44eq30mg2h9/IMG_9366.jpg?rlkey=2hm9109ctb3ke2yi1bwhv5twx&st=rcfg9w9g&raw=1" 
+     alt="Lost Pet" 
+     width="auto" 
+     height="300">
+<h2> More pics of him: </h2>
+<!-- Use flexbox to arrange images in a row -->
+<div class="image-container">
+    <figure>
+      <img src="https://www.dropbox.com/scl/fi/6u2ghy31vckg50xiyersu/IMG_7760.jpg?rlkey=oiyfhahzo6evull7fxgazpx4q&st=jb7b1pno&raw=1" alt="sleepy hodoo" height="300">
+      <figcaption>Sleepy 호두</figcaption>
+    </figure>
+    <figure>
+      <img src="https://www.dropbox.com/scl/fi/ag7tqj2bo354x7ogzatur/IMG_3588.jpg?rlkey=jqvttcmmtd7b6ldtil650szd3&st=zysapk1n&raw=1" alt="HAPPY HODOO" height="300">
+      <figcaption>Happy 호두</figcaption>
+    </figure>
+    <figure>
+      <img src="https://www.dropbox.com/scl/fi/96r5bnt5m8u3j4m46fsue/IMG_3916.JPG?rlkey=yxdnupvmmhh0s60w3m2ivxh1g&st=4r9ok5pt&raw=1" alt="Wethodoo" height="300">
+      <figcaption>Wet 호두</figcaption>
+    </figure>
+  </div>
+<br> <br> <br>
+</body>
+</html>
